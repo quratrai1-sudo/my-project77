@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savoria | 14th August Special Food Delivery</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="pakistan-theme">
+
+    <!-- 14TH AUGUST ANNOUNCEMENT BANNER -->
+    <div class="august-banner">
+        <span>🇵🇰 <strong>AZADI SPECIAL OFFER:</strong> Use Code <strong>FREEDOM14</strong> for FREE Delivery & 14% OFF till 14th August! 🇵🇰</span>
+    </div>
+
+    <!-- NAVBAR WITH STICKY HEADER & HAMBURGER MENU -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-utensils"></i> Savoria 🇵🇰
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#track-order">Track Order</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" title="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="cart-btn" class="icon-btn cart-icon-btn" title="Open Cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span id="cart-count">0</span>
+                </button>
+                <button id="login-modal-btn" class="btn btn-outline">
+                    <i class="fas fa-user"></i> Login
+                </button>
+                <!-- 3-Lines Hamburger Icon -->
+                <button id="hamburger-btn" class="hamburger-btn" title="Toggle Navigation Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <video autoplay muted loop playsinline id="hero-bg-video" class="hero-bg-video">
+            <source src="images/hero-video1.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-container hero-center">
+            <div class="hero-text centered">
+                <span class="badge">🇵🇰 Azadi Feast Sale - Up to 30% OFF</span>
+                <h1>Taste The Extraordinary Comfort Food</h1>
+                <p>Freshly prepared meals, burgers, karahi, and treats delivered fast to your doorstep!</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Order Now <i class="fas fa-arrow-right"></i></a>
+                    <a href="#categories" class="btn btn-secondary">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES & SEARCH SECTION -->
+    <section class="categories-section" id="categories">
+        <div class="section-container">
+            <div class="search-bar-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" placeholder="Search for burgers, karahi, pizza, cakes...">
+            </div>
+
+            <h2 class="section-title">Explore By Category</h2>
+            <p class="section-subtitle">Pick your favorite dishes from our top selections</p>
+
+            <div class="categories-grid">
+                <div class="category-card active" data-category="all">
+                    <i class="fas fa-border-all"></i>
+                    <span>All Items</span>
+                </div>
+                <div class="category-card" data-category="junk">
+                    <i class="fas fa-hamburger"></i>
+                    <span>Fast Food & BBQ</span>
+                </div>
+                <div class="category-card" data-category="sweets">
+                    <i class="fas fa-birthday-cake"></i>
+                    <span>Desserts & Sweets</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOD MENU GRID -->
+    <section class="menu-section" id="menu">
+        <div class="section-container">
+            <h2 class="section-title">Our Special Menu</h2>
+            <div class="food-grid" id="food-grid">
+                <!-- 20 Food Items populated dynamically via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FOODPANDA-STYLE LIVE ORDER TRACKING SECTION -->
+    <section class="tracking-section" id="track-order">
+        <div class="section-container">
+            <h2 class="section-title"><i class="fas fa-motorcycle"></i> Live Order Tracking</h2>
+            <p class="section-subtitle">Track your delivery progress in real-time</p>
+            
+            <div class="tracker-card">
+                <div class="tracker-header">
+                    <div>
+                        <span class="order-id-tag">Order #SAV-1408</span>
+                        <h3 id="estimated-time">Estimated Delivery: 25 - 35 Mins</h3>
+                    </div>
+                    <span class="status-badge pulse" id="current-status-badge">Preparing Meal</span>
+                </div>
+
+                <!-- Step-by-Step Foodpanda Style Tracker Progress Bar -->
+                <div class="tracker-progress">
+                    <div class="progress-step completed" id="step-1">
+                        <div class="step-icon"><i class="fas fa-check"></i></div>
+                        <p>Order Confirmed</p>
+                    </div>
+                    <div class="progress-step active" id="step-2">
+                        <div class="step-icon"><i class="fas fa-fire"></i></div>
+                        <p>Kitchen Preparing</p>
+                    </div>
+                    <div class="progress-step" id="step-3">
+                        <div class="step-icon"><i class="fas fa-motorcycle"></i></div>
+                        <p>Rider Picked Up</p>
+                    </div>
+                    <div class="progress-step" id="step-4">
+                        <div class="step-icon"><i class="fas fa-home"></i></div>
+                        <p>Delivered</p>
+                    </div>
+                </div>
+
+                <!-- Rider Details Box -->
+                <div class="rider-info-box">
+                    <div class="rider-details">
+                        <div class="rider-avatar">
+                            <i class="fas fa-user-ninja"></i>
+                        </div>
+                        <div>
+                            <h4>Rider: Muhammad Ali</h4>
+                            <p><i class="fas fa-star" style="color:#ffb703;"></i> 4.9 (1,240 deliveries)</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline" onclick="alert('Calling rider Muhammad Ali at 0300-1234567...')">
+                        <i class="fas fa-phone-alt"></i> Call Rider
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="section-container about-content">
+            <div class="about-text">
+                <h2 class="section-title">About Savoria</h2>
+                <p>We deliver high-quality, freshly cooked meals right to your home. Organic ingredients, hygienic kitchens, and super-fast rider delivery make us your top choice!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHECKOUT & ORDER FORM SECTION -->
+    <section class="checkout-contact-section" id="contact">
+        <div class="section-container">
+            <h2 class="section-title">Place Your Order</h2>
+            <p class="section-subtitle">Enter your details below to confirm your meal delivery</p>
+
+            <form id="checkout-form" class="checkout-form">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="cust-name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" id="cust-phone" required placeholder="03XXXXXXXXX">
+                </div>
+                <div class="form-group">
+                    <label>Delivery Address</label>
+                    <textarea id="cust-address" required placeholder="Complete house address & street info"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Payment Method</label>
+                    <select required id="cust-payment">
+                        <option value="cod">Cash on Delivery (COD)</option>
+                        <option value="easypaisa">Easypaisa / JazzCash</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary submit-order-btn">Confirm & Place Order <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="section-container">
+            <p>&copy; 2026 Savoria Pakistan 🇵🇰. Happy Independence Day!</p>
+        </div>
+    </footer>
+
+    <!-- CART SIDEBAR WITH DISCOUNT VOUCHER INPUT -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Dynamic Cart Items injected here -->
+        </div>
+
+        <!-- Voucher Code Input Area -->
+        <div class="voucher-box">
+            <input type="text" id="voucher-input" placeholder="Promo code (e.g. FREEDOM14)">
+            <button id="apply-voucher-btn" class="btn btn-outline">Apply</button>
+        </div>
+        <div id="voucher-message" class="voucher-msg"></div>
+
+        <div class="cart-footer">
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span id="cart-subtotal">Rs. 0</span>
+            </div>
+            <div class="summary-row" id="discount-row" style="display: none; color: #70e000;">
+                <span>Voucher Discount (14%):</span>
+                <span id="cart-discount">- Rs. 0</span>
+            </div>
+            <div class="summary-row">
+                <span>Delivery Fee:</span>
+                <span id="delivery-fee">Rs. 150</span>
+            </div>
+            <div class="summary-row total-row">
+                <span>Total:</span>
+                <strong id="cart-final-total">Rs. 0</strong>
+            </div>
+            <!-- Smooth scroll to Checkout Section directly -->
+            <button id="checkout-btn-cart" class="btn btn-primary checkout-btn">Proceed to Checkout</button>
+        </div>
+    </aside>
+
+    <!-- LOGIN MODAL -->
+    <div class="modal-overlay" id="login-modal">
+        <div class="modal-box">
+            <button class="close-modal" id="close-login">&times;</button>
+            <h2>Login to Savoria</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" required placeholder="user@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" required placeholder="••••••••">
+                </div>
+                <button type="submit" class="btn btn-primary">Login Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ORDER CONFIRMATION MODAL POPUP -->
+    <div class="modal-overlay" id="order-confirm-modal">
+        <div class="modal-box text-center">
+            <i class="fas fa-check-circle success-icon"></i>
+            <h2>Order Placed Successfully! 🇵🇰</h2>
+            <p>Your meal is being prepared. You can now track your order status live!</p>
+            <button class="btn btn-primary" id="go-to-tracker">Track My Order Now</button>
+        </div>
+    </div>
+
+    <!-- SCROLL-TO-TOP BUTTON -->
+    <button id="scroll-top-btn" class="scroll-top-btn" title="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- CUSTOM JS -->
+    <script src="script.js"></script>
+</body>
+</html>
