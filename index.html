@@ -58,8 +58,9 @@
 
     <!-- HERO SECTION -->
     <section class="hero" id="home">
+        <!-- FIXED PATH HERE: Removed images/ -->
         <video autoplay muted loop playsinline id="hero-bg-video" class="hero-bg-video">
-            <source src="images/hero-video1.mp4" type="video/mp4">
+            <source src="hero-video1.mp4" type="video/mp4">
         </video>
         <div class="hero-overlay"></div>
 
@@ -109,7 +110,7 @@
         <div class="section-container">
             <h2 class="section-title">Our Special Menu</h2>
             <div class="food-grid" id="food-grid">
-                <!-- 20 Food Items populated dynamically via JavaScript -->
+                <!-- Dynamic Content -->
             </div>
         </div>
     </section>
@@ -129,7 +130,6 @@
                     <span class="status-badge pulse" id="current-status-badge">Preparing Meal</span>
                 </div>
 
-                <!-- Step-by-Step Foodpanda Style Tracker Progress Bar -->
                 <div class="tracker-progress">
                     <div class="progress-step completed" id="step-1">
                         <div class="step-icon"><i class="fas fa-check"></i></div>
@@ -149,7 +149,6 @@
                     </div>
                 </div>
 
-                <!-- Rider Details Box -->
                 <div class="rider-info-box">
                     <div class="rider-details">
                         <div class="rider-avatar">
@@ -223,11 +222,8 @@
             <h3>Your Cart</h3>
             <button id="close-cart"><i class="fas fa-times"></i></button>
         </div>
-        <div class="cart-items" id="cart-items">
-            <!-- Dynamic Cart Items injected here -->
-        </div>
+        <div class="cart-items" id="cart-items"></div>
 
-        <!-- Voucher Code Input Area -->
         <div class="voucher-box">
             <input type="text" id="voucher-input" placeholder="Promo code (e.g. FREEDOM14)">
             <button id="apply-voucher-btn" class="btn btn-outline">Apply</button>
@@ -251,7 +247,6 @@
                 <span>Total:</span>
                 <strong id="cart-final-total">Rs. 0</strong>
             </div>
-            <!-- Smooth scroll to Checkout Section directly -->
             <button id="checkout-btn-cart" class="btn btn-primary checkout-btn">Proceed to Checkout</button>
         </div>
     </aside>
