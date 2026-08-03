@@ -1,13 +1,9 @@
-/* ==========================================================================
-   COLOR PALETTE & 14TH AUGUST PAKISTAN FLAG BACKGROUND PATTERN
-   ========================================================================== */
 :root {
     --bg-primary: #ffffff;
     --bg-card: #ffffff;
     --text-primary: #0a200d;
     --text-secondary: #425845;
     
-    /* Rich Dark Green Primary Theme */
     --accent-dark-green: #0b3c12;      
     --accent-hover: #14591d;
     --accent-gold: #ffb703;
@@ -35,7 +31,6 @@
     scroll-behavior: smooth;
 }
 
-/* 14th August Special Background with subtle repeated Pakistani Crescent Flags on White */
 body.pakistan-theme {
     background-color: var(--bg-primary);
     background-image: radial-gradient(rgba(11, 60, 18, 0.05) 1px, transparent 0);
@@ -45,7 +40,6 @@ body.pakistan-theme {
     overflow-x: hidden;
 }
 
-/* Independence Banner */
 .august-banner {
     background-color: var(--accent-dark-green);
     color: #ffffff;
@@ -55,9 +49,6 @@ body.pakistan-theme {
     font-weight: 500;
 }
 
-/* ==========================================================================
-   HEADER & HAMBURGER NAVIGATION
-   ========================================================================== */
 .navbar {
     position: sticky;
     top: 0;
@@ -110,7 +101,6 @@ body.pakistan-theme {
     gap: 1rem;
 }
 
-/* 3-Lines Hamburger Icon */
 .hamburger-btn {
     display: none;
     background: none;
@@ -205,9 +195,6 @@ body.pakistan-theme {
     color: #ffffff;
 }
 
-/* ==========================================================================
-   HERO SECTION
-   ========================================================================== */
 .hero {
     position: relative;
     min-height: 75vh;
@@ -284,9 +271,6 @@ body.pakistan-theme {
     gap: 1rem;
 }
 
-/* ==========================================================================
-   CATEGORIES (DARK GREEN BOXES) & SEARCH
-   ========================================================================== */
 .section-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -365,9 +349,6 @@ body.pakistan-theme {
     transform: translateY(-3px);
 }
 
-/* ==========================================================================
-   FOOD MENU GRID
-   ========================================================================== */
 .food-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -463,9 +444,6 @@ body.pakistan-theme {
     background-color: var(--accent-hover);
 }
 
-/* ==========================================================================
-   FOODPANDA-STYLE LIVE ORDER TRACKER UI
-   ========================================================================== */
 .tracking-section {
     background-color: rgba(11, 60, 18, 0.03);
     border-top: 1px solid var(--border-color);
@@ -509,7 +487,6 @@ body.pakistan-theme {
     border-radius: 20px;
 }
 
-/* Step-by-Step Progress Timeline */
 .tracker-progress {
     display: flex;
     justify-content: space-between;
@@ -601,9 +578,6 @@ body.pakistan-theme {
     font-size: 1.4rem;
 }
 
-/* ==========================================================================
-   CHECKOUT FORM & FOOTER
-   ========================================================================== */
 .checkout-form {
     max-width: 600px;
     margin: 0 auto;
@@ -650,9 +624,6 @@ body.pakistan-theme {
     margin-top: 3rem;
 }
 
-/* ==========================================================================
-   CART SIDEBAR & VOUCHER SECTION
-   ========================================================================== */
 .cart-overlay,
 .modal-overlay {
     position: fixed;
@@ -782,7 +753,6 @@ body.pakistan-theme {
     margin-top: 1rem;
 }
 
-/* MODALS */
 .modal-box {
     background-color: var(--bg-card);
     padding: 2.5rem;
@@ -815,7 +785,6 @@ body.pakistan-theme {
     margin-bottom: 1rem;
 }
 
-/* SCROLL TOP BUTTON */
 .scroll-top-btn {
     position: fixed;
     bottom: 30px;
