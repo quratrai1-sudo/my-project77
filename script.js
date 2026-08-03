@@ -1,32 +1,29 @@
 /* ==========================================================================
-   20 FOOD ITEMS DATABASE
+   20 FOOD ITEMS DATABASE - UPDATED PATHS FOR ROOT DIRECTORY
    ========================================================================== */
 const foodItems = [
-    { id: 1, name: "Crispy Zinger Burger", category: "junk", price: 850, desc: "Crispy chicken fillet with fresh lettuce & mayonnaise", img: "images/food-01.jpg", popular: true },
-    { id: 2, name: "Cheesy Pepperoni Pizza", category: "junk", price: 1450, desc: "Mozzarella overload with fresh tomato sauce & herbs", img: "images/food-02.jpg", popular: false },
-    { id: 3, name: "Penne Arrabbiata Pasta", category: "junk", price: 950, desc: "Spicy tomato sauce pasta topped with fresh basil", img: "images/food-03.jpg", popular: true },
-    { id: 4, name: "Traditional Handi Karahi", category: "junk", price: 1800, desc: "Rich gravy chicken cooked in traditional spices", img: "images/food-04.jpg", popular: false },
-    { id: 5, name: "Steamed Chicken Dumplings", category: "junk", price: 750, desc: "Freshly steamed momos with spicy chili dipping sauce", img: "images/food-05.jpg", popular: false },
-    { id: 6, name: "Grilled Cheese Patty Sandwich", category: "junk", price: 650, desc: "Toasted bread with melted cheddar & fried patty", img: "images/food-06.jpg", popular: true },
-    { id: 7, name: "Charcoal Roasted Chicken", category: "junk", price: 1600, desc: "Whole roasted chicken served with lemons & herbs", img: "images/food-07.jpg", popular: false },
-    { id: 8, name: "Club Sandwich Combo", category: "junk", price: 700, desc: "Triple layer sandwich loaded with chicken & veggies", img: "images/food-08.jpg", popular: true },
-    { id: 9, name: "Toasted Garlic Club Toast", category: "junk", price: 550, desc: "Multi-layered toasted bread with veggies & cheese", img: "images/food-09.jpg", popular: false },
-    { id: 10, name: "BBQ Grilled Chicken Skewers", category: "junk", price: 1200, desc: "Smoky tender chicken cubes baked in tray", img: "images/food-10.jpg", popular: false },
-    { id: 11, name: "Heart Shape Pepperoni Pizza", category: "junk", price: 1550, desc: "Special heart shaped crust pizza with dip", img: "images/food-11.jpg", popular: false },
-    { id: 12, name: "Square Pan Thin Crust Pizza", category: "junk", price: 1650, desc: "Crispy square pan pizza loaded with sausages", img: "images/food-12.jpg", popular: false },
-    { id: 13, name: "Smoky Beef Cheese Burger", category: "junk", price: 950, desc: "Double juicy beef patty with melted cheddar cheese", img: "images/food-13.jpg", popular: true },
-    { id: 14, name: "Golden Potato Smileys", category: "junk", price: 400, desc: "Crispy fried smiley potato bites with tomato ketchup", img: "images/food-14.jpg", popular: false },
-    { id: 15, name: "Loaded Chili Cheese Fries", category: "junk", price: 650, desc: "Fries topped with melted cheese, jalapenos & sauce", img: "images/food-15.jpg", popular: false },
-    { id: 16, name: "Red Velvet Cream Cake", category: "sweets", price: 2800, desc: "Rich red velvet layers topped with strawberry slices", img: "images/food-16.jpg", popular: true },
-    { id: 17, name: "Dark Fudge Chocolate Cake", category: "sweets", price: 2500, desc: "Moist dark chocolate sponge with cocoa cream", img: "images/food-17.jpg", popular: false },
-    { id: 18, name: "Choco Lava Molten Cake", category: "sweets", price: 600, desc: "Hot oozing chocolate center cake served fresh", img: "images/food-18.jpg", popular: false },
-    { id: 19, name: "Pistachio Milk Cake", category: "sweets", price: 2200, desc: "Soaked three milk sponge topped with pistachios", img: "images/food-19.jpg", popular: false },
-    { id: 20, name: "Caramel Nut Delight Cake", category: "sweets", price: 2900, desc: "Rich caramel glaze topped with roasted almonds", img: "images/food-20.jpg", popular: true }
+    { id: 1, name: "Crispy Zinger Burger", category: "junk", price: 850, desc: "Crispy chicken fillet with fresh lettuce & mayonnaise", img: "food-01.jpg", popular: true },
+    { id: 2, name: "Cheesy Pepperoni Pizza", category: "junk", price: 1450, desc: "Mozzarella overload with fresh tomato sauce & herbs", img: "food-02.jpg", popular: false },
+    { id: 3, name: "Penne Arrabbiata Pasta", category: "junk", price: 950, desc: "Spicy tomato sauce pasta topped with fresh basil", img: "food-03.jpg", popular: true },
+    { id: 4, name: "Traditional Handi Karahi", category: "junk", price: 1800, desc: "Rich gravy chicken cooked in traditional spices", img: "food-04.jpg", popular: false },
+    { id: 5, name: "Steamed Chicken Dumplings", category: "junk", price: 750, desc: "Freshly steamed momos with spicy chili dipping sauce", img: "food-05.jpg", popular: false },
+    { id: 6, name: "Grilled Cheese Patty Sandwich", category: "junk", price: 650, desc: "Toasted bread with melted cheddar & fried patty", img: "food-06.jpg", popular: true },
+    { id: 7, name: "Charcoal Roasted Chicken", category: "junk", price: 1600, desc: "Whole roasted chicken served with lemons & herbs", img: "food-07.jpg", popular: false },
+    { id: 8, name: "Club Sandwich Combo", category: "junk", price: 700, desc: "Triple layer sandwich loaded with chicken & veggies", img: "food-08.jpg", popular: true },
+    { id: 9, name: "Toasted Garlic Club Toast", category: "junk", price: 550, desc: "Multi-layered toasted bread with veggies & cheese", img: "food-09.jpg", popular: false },
+    { id: 10, name: "BBQ Grilled Chicken Skewers", category: "junk", price: 1200, desc: "Smoky tender chicken cubes baked in tray", img: "food-10.jpg", popular: false },
+    { id: 11, name: "Heart Shape Pepperoni Pizza", category: "junk", price: 1550, desc: "Special heart shaped crust pizza with dip", img: "food-11.jpg", popular: false },
+    { id: 12, name: "Square Pan Thin Crust Pizza", category: "junk", price: 1650, desc: "Crispy square pan pizza loaded with sausages", img: "food-12.jpg", popular: false },
+    { id: 13, name: "Smoky Beef Cheese Burger", category: "junk", price: 950, desc: "Double juicy beef patty with melted cheddar cheese", img: "food-13.jpg", popular: true },
+    { id: 14, name: "Golden Potato Smileys", category: "junk", price: 400, desc: "Crispy fried smiley potato bites with tomato ketchup", img: "food-14.jpg", popular: false },
+    { id: 15, name: "Loaded Chili Cheese Fries", category: "junk", price: 650, desc: "Fries topped with melted cheese, jalapenos & sauce", img: "food-15.jpg", popular: false },
+    { id: 16, name: "Red Velvet Cream Cake", category: "sweets", price: 2800, desc: "Rich red velvet layers topped with strawberry slices", img: "food-16.jpg", popular: true },
+    { id: 17, name: "Dark Fudge Chocolate Cake", category: "sweets", price: 2500, desc: "Moist dark chocolate sponge with cocoa cream", img: "food-17.jpg", popular: false },
+    { id: 18, name: "Choco Lava Molten Cake", category: "sweets", price: 600, desc: "Hot oozing chocolate center cake served fresh", img: "food-18.jpg", popular: false },
+    { id: 19, name: "Pistachio Milk Cake", category: "sweets", price: 2200, desc: "Soaked three milk sponge topped with pistachios", img: "food-19.jpg", popular: false },
+    { id: 20, name: "Caramel Nut Delight Cake", category: "sweets", price: 2900, desc: "Rich caramel glaze topped with roasted almonds", img: "food-20.jpg", popular: true }
 ];
 
-/* ==========================================================================
-   STATE VARIABLES
-   ========================================================================== */
 let cart = JSON.parse(localStorage.getItem("savoria_cart")) || [];
 let isVoucherApplied = false;
 let discountPercent = 0;
@@ -44,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
     initCheckoutButtonDirectScroll();
 });
 
-/* RENDER FOOD GRID */
 function renderFoodGrid(items) {
     const foodGrid = document.getElementById("food-grid");
     if (!foodGrid) return;
@@ -73,7 +69,6 @@ function renderFoodGrid(items) {
     });
 }
 
-/* HAMBURGER MENU TOGGLE */
 function initHamburgerMenu() {
     const hamburgerBtn = document.getElementById("hamburger-btn");
     const navLinks = document.getElementById("nav-links");
@@ -89,7 +84,6 @@ function initHamburgerMenu() {
     });
 }
 
-/* CATEGORY & SEARCH FILTER */
 document.querySelectorAll(".category-card").forEach(card => {
     card.addEventListener("click", () => {
         document.querySelectorAll(".category-card").forEach(c => c.classList.remove("active"));
@@ -111,7 +105,6 @@ document.getElementById("search-input")?.addEventListener("input", (e) => {
     ));
 });
 
-/* CART OPERATIONS */
 function addToCart(id) {
     const item = foodItems.find(f => f.id === id);
     const existing = cart.find(c => c.id === id);
@@ -200,7 +193,6 @@ function updateCartUI() {
     if (finalTotalEl) finalTotalEl.innerText = `Rs. ${finalTotal}`;
 }
 
-/* VOUCHER SYSTEM */
 function initVoucher() {
     const applyBtn = document.getElementById("apply-voucher-btn");
     const voucherInput = document.getElementById("voucher-input");
@@ -222,7 +214,6 @@ function initVoucher() {
     });
 }
 
-/* DIRECT CHECKOUT BUTTON SCROLL (No Overlay Blur) */
 function initCheckoutButtonDirectScroll() {
     const checkoutBtn = document.getElementById("checkout-btn-cart");
     const cartSidebar = document.getElementById("cart-sidebar");
@@ -233,17 +224,14 @@ function initCheckoutButtonDirectScroll() {
             alert("Your cart is empty! Add food items first.");
             return;
         }
-        // Close Cart Sidebar smoothly
         cartSidebar?.classList.remove("active");
         cartOverlay?.classList.remove("active");
 
-        // Direct smooth scroll to place your order section
         const contactSection = document.getElementById("contact");
         contactSection?.scrollIntoView({ behavior: "smooth" });
     });
 }
 
-/* CART SIDEBAR TOGGLE */
 const cartSidebar = document.getElementById("cart-sidebar");
 const cartOverlay = document.getElementById("cart-overlay");
 
@@ -262,7 +250,6 @@ cartOverlay?.addEventListener("click", () => {
     cartOverlay?.classList.remove("active");
 });
 
-/* MODALS & ORDER CONFIRMATION */
 function initModals() {
     const loginModal = document.getElementById("login-modal");
     document.getElementById("login-modal-btn")?.addEventListener("click", () => loginModal?.classList.add("active"));
@@ -281,7 +268,6 @@ function initModals() {
     });
 }
 
-/* CHECKOUT FORM */
 function initCheckoutForm() {
     const form = document.getElementById("checkout-form");
     form?.addEventListener("submit", (e) => {
@@ -298,7 +284,6 @@ function initCheckoutForm() {
     });
 }
 
-/* FOODPANDA-STYLE LIVE RIDER TRACKER SIMULATOR */
 function simulateLiveFoodpandaTracker() {
     const step2 = document.getElementById("step-2");
     const step3 = document.getElementById("step-3");
@@ -308,7 +293,6 @@ function simulateLiveFoodpandaTracker() {
 
     badge.innerText = "Food Being Prepared";
 
-    // Simulate Rider Picked Up after 6 seconds
     setTimeout(() => {
         step2.classList.remove("active");
         step2.classList.add("completed");
@@ -317,7 +301,6 @@ function simulateLiveFoodpandaTracker() {
         if (timeEl) timeEl.innerText = "Estimated Delivery: 10 - 15 Mins";
     }, 6000);
 
-    // Simulate Delivered status after 12 seconds
     setTimeout(() => {
         step3.classList.remove("active");
         step3.classList.add("completed");
@@ -328,7 +311,6 @@ function simulateLiveFoodpandaTracker() {
     }, 12000);
 }
 
-/* THEME & SCROLL TO TOP */
 function initTheme() {
     const savedTheme = localStorage.getItem("savoria_theme") || "light";
     document.documentElement.setAttribute("data-theme", savedTheme);
